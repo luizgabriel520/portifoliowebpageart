@@ -3,10 +3,10 @@ import react from '@vitejs/plugin-react';
 import { fileURLToPath, URL } from 'node:url';
 
 export default defineConfig({
-  base: '/meu-portfolio/',
+  base: '/',
   plugins: [react()],
   resolve: {
-    alias: {
+   alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
