@@ -157,13 +157,15 @@ function SectionHeading({ eyebrow, title, accent }: { eyebrow: string; title: st
 
 function Logo({ light = false }: { light?: boolean }) {
   return (
-    <a className={`logo ${light ? 'logo-light' : ''}`} href="#inicio" aria-label="WEBPAGEART, voltar ao início">
-  <img
-    className={`logo-image ${light ? 'logo-image-footer' : ''}`}
-    src={`${import.meta.env.BASE_URL}IMG_20260422_074917_901.webp`}
-    alt="WEBPAGEART"
-  />
-</a>
+        <a className={`logo ${light ? 'logo-light' : ''}`} href="#inicio" aria-label="WEBPAGEART, voltar ao início">
+      <img
+        className={`logo-image ${light ? 'logo-image-footer' : ''}`}
+        src={`${import.meta.env.BASE_URL}IMG_20260422_074917_901.webp`}
+        alt="WEBPAGEART"
+      />
+    </a>
+  );   // <- adicionar
+}      // <- adicionar
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
